@@ -43,5 +43,6 @@ public class SuperMod
 
 	public SuperMod(IEventBus modEventBus, ModContainer modContainer)
 	{
-		modItems.ITEMS.register(modEventBus
+		ModItems.ITEMS.register(modEventBus);
 	}
+}
