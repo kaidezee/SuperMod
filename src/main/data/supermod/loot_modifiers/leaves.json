@@ -1,3 +1,5 @@
 {
-	
+        "type": "neoforge:add_table",
+        "conditions": [],
+        "table": "minecraft:leaves" 
 }
