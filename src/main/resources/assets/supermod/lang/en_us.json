@@ -1,3 +1,5 @@
 {
-	"item.supermod.orange": "Orange"
+	"item.supermod.orange": "Orange",
+
+	"ItemGroup.supermod": "Stuff"
 }
