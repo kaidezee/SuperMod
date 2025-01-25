@@ -1,5 +1,7 @@
 {
 	"item.supermod.orange": "Orange",
 
+        "block.supermod.checkered_tile_block": "Checkered tile block",
+
 	"ItemGroup.supermod": "Stuff"
 }

@@ -9,17 +9,17 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModTabs
-{
-	public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = 
-	DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-	
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> COOL_STUFF = 
-	CREATIVE_TABS.register("stuff", () -> CreativeModeTab.builder()
-		.title(Component.translatable("ItemGroup.supermod"))
-		.withTabsBefore(CreativeModeTabs.COMBAT)
-		.icon(() -> ModItems.ORANGE.get().getDefaultInstance())
-		.displayItems((parameters, output) -> {
-			output.accept(ModItems.ORANGE.get());
-		}).build());
+public class ModTabs {
+        public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister
+                        .create(Registries.CREATIVE_MODE_TAB, MODID);
+
+        public static final DeferredHolder<CreativeModeTab, CreativeModeTab> COOL_STUFF = CREATIVE_TABS
+                        .register("stuff", () -> CreativeModeTab.builder()
+                                        .title(Component.translatable("ItemGroup.supermod"))
+                                        .withTabsBefore(CreativeModeTabs.COMBAT)
+                                        .icon(() -> ModItems.ORANGE.get().getDefaultInstance())
+                                        .displayItems((parameters, output) -> {
+                                                output.accept(ModItems.ORANGE.get());
+                                                output.accept(ModItems.CHECKERED_TILE_BLOCK.get());
+                                        }).build());
 }

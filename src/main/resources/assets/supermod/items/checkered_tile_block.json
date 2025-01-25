@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "supermod:item/checkered_tile_block"
+	}
+}
